@@ -9,13 +9,20 @@ on:
 jobs:
   offline:
     name: 离线自测 · py${{ matrix.python }}
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
-        python: ["3.9", "3.11", "3.13"]
+        include:
+          # 3.9 在 ubuntu-latest（26.04）上已无预编译包，固定旧 runner 真测低版本
+          - python: "3.9"
+            os: ubuntu-22.04
+          - python: "3.11"
+            os: ubuntu-latest
+          - python: "3.13"
+            os: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: actions/setup-python@v5
         with:
