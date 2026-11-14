@@ -1,5 +1,8 @@
 # kanvis-skill
 
+[![selftest](https://github.com/Kanvis-chen/kanvis-skill/actions/workflows/selftest.yml/badge.svg)](https://github.com/Kanvis-chen/kanvis-skill/actions/workflows/selftest.yml)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 一个能稳定读微信公众号文章和贴图（图片消息）的技能工具箱。零第三方依赖，纯 Python 标准库。
 
 A zero-dependency toolkit for reading WeChat Official Account articles and picture-message posts (`mp.weixin.qq.com`), built to be called reliably by AI coding agents.
