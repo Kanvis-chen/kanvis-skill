@@ -1,0 +1,11 @@
+{
+  "name": "{{NAME}}",
+  "version": "0.1.0",
+  "summary": "一句话摘要，会显示在 ks.py list 里。",
+  "entry": "scripts/main.py",
+  "runtime": "python",
+  "tags": [],
+  "examples": [
+    "python ks.py run {{NAME}} --help"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "wechat-article",
+  "version": "1.0.0",
+  "summary": "读取微信公众号图文与贴图（图片消息），正文/图片/作者/时间一次拿全，图片带 Referer 下载，直连被风控时自动换代理或浏览器渲染。",
+  "entry": "scripts/wx_read.py",
+  "runtime": "python",
+  "tags": ["公众号", "微信", "采集", "贴图", "图片消息", "wechat", "article"],
+  "examples": [
+    "python ks.py run wechat-article \"https://mp.weixin.qq.com/s/xxxx\"",
+    "python ks.py run wechat-article \"https://mp.weixin.qq.com/s/xxxx\" --out ./dump",
+    "python ks.py run wechat-article \"https://mp.weixin.qq.com/s/xxxx\" --channel browser",
+    "python ks.py run wechat-article ./saved.html --channel file --json"
+  ]
+}

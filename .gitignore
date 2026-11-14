@@ -1,0 +1,19 @@
+# 运行时生成，路径与本机绑定，不入库
+manifest.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 抓取产物
+dump/
+out/
+*.log
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
