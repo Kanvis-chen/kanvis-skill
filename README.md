@@ -43,7 +43,7 @@ python ks.py run wechat-article "<文章链接>"        # 读一篇
 python ks.py run wechat-article "<文章链接>" --out ./dump   # 连图一起存
 ```
 
-要求 Python 3.8+。没有 pip install 这一步。
+要求 Python 3.8+（CI 实测 3.9 / 3.11 / 3.13）。没有 pip install 这一步。
 
 ### 输出长什么样
 
